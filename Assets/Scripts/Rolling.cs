@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Rolling : MonoBehaviour
 {
+    [SerializeField] Vector3 direction = Vector3.right;
     [SerializeField] int rotationSpeed = 800;
 
     void Start()
@@ -11,6 +12,6 @@ public class Rolling : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime);
+        transform.Rotate(direction * rotationSpeed * Time.deltaTime);
     }
 }
