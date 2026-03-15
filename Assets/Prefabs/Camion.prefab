@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 5233837902552788300}
   - component: {fileID: 714264586541081568}
   - component: {fileID: 3930227751204694721}
+  - component: {fileID: 9088726282743139256}
   m_Layer: 0
   m_Name: Camion
   m_TagString: Untagged
@@ -299,8 +300,8 @@ Transform:
   m_GameObject: {fileID: 7849841312337969151}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.01, y: -0.48185626, z: 85.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.01, y: -0.34, z: 85.8}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3286913610894211027}
@@ -399,8 +400,35 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.326177, y: 2064387.8, z: 8.897326}
-  m_Center: {x: -0.00018632412, y: -1032189.75, z: -1.3878746}
+  m_Size: {x: 3.3261774, y: 4.072524, z: 8.897327}
+  m_Center: {x: -0.00018626451, y: 2.002285, z: -1.3878748}
+--- !u!54 &9088726282743139256
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7849841312337969151}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8158571183274648025
 GameObject:
   m_ObjectHideFlags: 0
