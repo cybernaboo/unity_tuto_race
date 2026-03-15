@@ -193,6 +193,8 @@ GameObject:
   - component: {fileID: 4317307247487965022}
   - component: {fileID: 8942471630577865139}
   - component: {fileID: 5440023697570258152}
+  - component: {fileID: -6597349360443421964}
+  - component: {fileID: -8068049807162749472}
   m_Layer: 0
   m_Name: Towtruck
   m_TagString: Untagged
@@ -341,6 +343,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 40
+--- !u!114 &-6597349360443421964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515128364433211246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e5ed66af9bc4083a9ffb68bbd3ac5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destroy
+--- !u!114 &-8068049807162749472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515128364433211246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e5ed66af9bc4083a9ffb68bbd3ac5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destroy
 --- !u!1 &5672431312614996290
 GameObject:
   m_ObjectHideFlags: 0

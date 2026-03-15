@@ -374,6 +374,7 @@ GameObject:
   - component: {fileID: 7270407018337127291}
   - component: {fileID: 288397441760543943}
   - component: {fileID: 4003065937983020251}
+  - component: {fileID: 7036765378312318362}
   m_Layer: 0
   m_Name: Hatchback
   m_TagString: Untagged
@@ -519,3 +520,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 40
+--- !u!114 &7036765378312318362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7769690492283750692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e5ed66af9bc4083a9ffb68bbd3ac5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destroy

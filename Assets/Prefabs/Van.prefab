@@ -374,6 +374,7 @@ GameObject:
   - component: {fileID: 1642244400813349054}
   - component: {fileID: 7463041299334462626}
   - component: {fileID: 8427072148553562189}
+  - component: {fileID: -8895319256273040175}
   m_Layer: 0
   m_Name: Van
   m_TagString: Untagged
@@ -519,3 +520,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 40
+--- !u!114 &-8895319256273040175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6537854930162182455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e5ed66af9bc4083a9ffb68bbd3ac5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destroy

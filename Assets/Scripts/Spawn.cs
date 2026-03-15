@@ -9,6 +9,9 @@ public class Spawn : MonoBehaviour
     [SerializeField] GameObject[] cars;
     [SerializeField] Transform[] spawns;
     Quaternion spawnRotation = Quaternion.Euler(0, 180f, 0);
+    int totalCars = 0;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
     {
@@ -26,6 +29,10 @@ public class Spawn : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnRate);
             Instantiate(cars[Random.Range(0, cars.Length)], spawns[Random.Range(0, spawns.Length)].position, spawnRotation);
+            totalCars++;
+            if (totalCars % 10 == 0)
+                spawnRate -= 0.1f;
+            spawnRate = Mathf.Clamp(spawnRate, 0.3f, 5.0f);
         }
     }
 }
