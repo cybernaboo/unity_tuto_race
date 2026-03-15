@@ -6,7 +6,8 @@ using UnityEngine;
 public class Spawn : MonoBehaviour
 {
     [SerializeField] float spawnRate = 2f;
-    [SerializeField] GameObject car;
+    [SerializeField] GameObject[] cars;
+    [SerializeField] Transform[] spawns;
     Quaternion spawnRotation = Quaternion.Euler(0, 180f, 0);
 
     void Start()
@@ -24,7 +25,7 @@ public class Spawn : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(spawnRate);
-            Instantiate(car, Vector3.zero, spawnRotation);
+            Instantiate(cars[Random.Range(0, cars.Length)], spawns[Random.Range(0, spawns.Length)].position, spawnRotation);
         }
     }
 }
