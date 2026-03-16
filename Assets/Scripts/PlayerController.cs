@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Car"))
         {
+            gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 500f);
             GameObject.Find("Road").GetComponent<Scrolling>().enabled = false;
             GameObject.Find("Grass").GetComponent<Scrolling>().enabled = false;
             // list of script Rolling in the child components of the player
@@ -25,7 +26,8 @@ public class PlayerController : MonoBehaviour
             {
                 rolling.enabled = false;
             }
-
+            GameObject.Find("Spawn").GetComponent<Spawn>().StopSpawn();
+            Destroy(gameObject.GetComponent<PlayerController>());
         }
     }
 }

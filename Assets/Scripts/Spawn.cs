@@ -35,4 +35,11 @@ public class Spawn : MonoBehaviour
             spawnRate = Mathf.Clamp(spawnRate, 0.3f, 5.0f);
         }
     }
+
+    public void StopSpawn()
+    {
+        StopAllCoroutines();
+        foreach (GameObject car in GameObject.FindGameObjectsWithTag("Car"))
+            Destroy(car);
+    }
 }
